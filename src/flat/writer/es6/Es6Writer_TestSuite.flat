@@ -10,7 +10,7 @@ import flat/writer/es6/Es6Writer
   Es6Writer_Test
 ]]
 class {
-  public static async main(String args[]) {
+  public static async main(String[] args) {
     let test = Es6Writer_TestSuite()
 
     Timer timer = Timer().start()
