@@ -1,16 +1,18 @@
 package flat/writer/es6
 
-import flat/ast/Node
-import flat/ast/FileNode
+import flat/ast
+import flat/ast/visitor
 import flat/compiler/models/Token
-import flat/io/File
-import flat/io/FileWriter
+import flat/io
 import flat/log/Logger
 import flat/eventstream/EventStream
-import flat/writer/Writer
+import flat/writer
 
 class extends Writer {
-  public async write(FileNode fileNode) {
-
+  public write(EventStream nodeStream) -> EventStream {
+    let outputStream = Es6OutputStream()
+    let visitor = Es6Visitor(outputStream)
+    let visitorStream = Visitor().visit(nodeStream, visitor)
+    return visitorStream
   }
 }

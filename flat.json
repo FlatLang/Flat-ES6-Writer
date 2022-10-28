@@ -20,6 +20,7 @@
         "github:FlatLang/Flat-Annotations": "master",
         "github:FlatLang/Flat-Compiler-Models": "master",
         "github:FlatLang/Logger": "master",
+        "github:FlatLang/Event-Stream": "master",
         "github:FlatLang/Flat-Writer": "master"
       }
     },
