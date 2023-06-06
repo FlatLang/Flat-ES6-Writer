@@ -12,14 +12,14 @@ import flat/eventstream/EventStream
 import flat/writer
 
 class extends Writer {
-  public write(EventStream nodeStream) -> EventStream {
-    let outputStream = Es6OutputStream()
-    let visitor = Es6Visitor(outputStream)
-    let visitorStream = Visitor().visit(nodeStream, visitor)
-    return visitorStream
-  }
+    public write(EventStream nodeStream) -> EventStream {
+        let outputStream = Es6OutputStream()
+        let visitor = Es6Visitor(outputStream)
+        let visitorStream = Visitor().visit(nodeStream, visitor)
+        return visitorStream
+    }
 
-  override public getPattern(Class<Node> nodeType) -> TokenPattern {
-    return null
-  }
+    override public getPattern(Class<Node> nodeType) -> TokenPattern {
+        return null
+    }
 }

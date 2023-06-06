@@ -3,9 +3,9 @@ package flat/writer/es6
 import flat/writer/es6/Es6Writer
 
 testable class {
-  test `can create`() {
-    let value = Es6Writer()
+    test `can create`() {
+        let value = Es6Writer()
 
-    expect(value).toNotBe(null)
-  }
+        expect(value).toNotBe(null)
+    }
 }
